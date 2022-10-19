@@ -1,0 +1,196 @@
+@font-face {
+	font-family: "Lato";
+	src: url(../fonts/Lato-Regular.woff2) format("woff2"), url(../fonts/Lato-Regular.woff) format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url(../fonts/Lato-Bold.woff2) format("woff2"), url(../fonts/Lato-Bold.woff) format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url(../fonts/Lato-Black.woff2) format("woff2"), url(../fonts/Lato-Black.woff) format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+
+body {
+	font-family: "Lato";
+	font-weight: 400;
+}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+	background: url("../img/more.jpeg") 0 0 / cover no-repeat fixed;
+}
+
+[class*="__container"] {
+   max-width: 1230px;
+	margin: 0 auto;
+}
+
+.body__sun {
+	position: relative;
+	top: 40px;
+	width: 200px;
+	height: 200px;
+	border: 5px solid yellow;
+	border-radius: 50%;
+	background-color: yellowgreen;
+}
+
+.body__sun:hover {
+	transform: scale(1.3);
+}
+
+.body__sun:hover .sun__line {
+	width: 150px;
+}
+
+.body__sun:hover .sun__line1 {
+	width: 150px;
+}
+
+.body__sun:hover .sun__line2 {
+	width: 150px;
+}
+
+.sun__line {
+	position: absolute;
+	width: 100px;
+	height: 5px;
+	top: 240px;
+	left: 210px;
+	background-color: yellow;
+	transform: rotate(45deg);
+	z-index: 5;
+}
+
+.sun__line1 {
+	position: absolute;
+	width: 100px;
+	height: 5px;
+	top: 100px;
+	left: 245px;
+	background-color: yellow;
+	z-index: 5;
+}
+
+.sun__line2 {
+	position: absolute;
+	width: 100px;
+	height: 5px;
+	top: 280px;
+	left: 49px;
+	background-color: yellow;
+	transform: rotate(90deg);
+	z-index: 5;
+}
+
+.body__picture {
+	border: 5px solid black;
+	border-radius:  0% 100% 47% 53% / 100% 0% 100% 0%; 	
+	width: 400px;
+	height: 200px;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate( 0, -50%);
+	background: yellow;
+}
+
+
+.body__picture1 {
+	border: 5px solid black;
+	border-radius: 0% 100% 0% 100% / 53% 0% 100% 47% ; 	
+	width: 400px;
+	height: 200px;
+	position: absolute;
+	top: 60%;
+	left: 24%;
+	transform: translate( 0, -50%);
+	background: brown;
+}
+
+.body__circle1 {
+	position: absolute;
+	top: 120px;
+	left: 35px;
+	width: 50px;
+	height: 50px;
+	border: 10px dashed blue;
+	border-radius: 50%;
+}
+
+.body__line {
+	height: 62px;
+	width: 62px;
+	border: 1px solid black;
+	background: wheat;
+	position: absolute;
+	top: 5px;
+	left: 70px;
+	transition: all 500ms ease;
+	border-radius: 50%;
+}
+
+.body__line::before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	background: rgba(15, 0, 0, 0.6);
+	border-radius: 5px;
+	transition: all 2s ease;
+	border-radius: 50%;
+	border: 1px solid black;
+
+}
+
+.body__line:hover::before {
+	height: 62px;
+}
+
+.body__circle1:hover {
+	transform: rotate(50deg);
+}
+
+.body__circle {
+	position: absolute;
+	top: -300px;
+	left: -13px;
+	width: 10px;
+	height: 300px;
+	border: 10px solid black;
+}
+
+.body__sail {
+	border: 5px solid black;
+	border-radius: 0% 100% 100% 0% / 0% 50% 50% 100%  ; 	
+	width: 100px;
+	height: 300px;
+	position: absolute;
+	top: -5%;
+	left: 24%;
+	background: blue;
+}
+
+.body__sail:hover {
+	width: 200px;
+}
+
+.body__image {
+	max-width: 100%;
+}
