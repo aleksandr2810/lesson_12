@@ -184,11 +184,11 @@ body {
 	position: absolute;
 	top: -5%;
 	left: 24%;
-	background: blue;
+	background: green;
 }
 
 .body__sail:hover {
-	width: 201px;
+	width: 200px;
 }
 
 .body__image {
